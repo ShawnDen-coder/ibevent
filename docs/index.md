@@ -74,6 +74,3 @@ event_type = IBEventType.BAR_UPDATE
 print(event_type)
 ```
 
-## API Reference
-
-For detailed API documentation, please refer to the [MkDocs documentation](https://ShawnDen-coder.github.io/ibevent).
