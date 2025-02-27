@@ -26,7 +26,6 @@ Example:
     >>> def handle_bar(ib, bars, has_new_bar):
     ...     if has_new_bar:
     ...         print(bars[-1])
-    >>> 
     >>> # Run event loop
     >>> ib.run()
 """
@@ -55,6 +54,7 @@ class IBEventType(Enum):
         CONNECTED: Connection established event.
         DISCONNECTED: Connection lost event.
     """
+
     # Common events
     CONNECTED = "connectedEvent"  # 连接成功事件
     DISCONNECTED = "disconnectedEvent"  # 连接断开事件
@@ -157,6 +157,7 @@ class IBEventRegistry(BaseEventRegistry):
         >>> ib.connect('127.0.0.1', 7497, clientId=1)
         >>> ib.run()
     """
+
     def __init__(self, ib):
         """Initialize the IB event registry.
 
@@ -207,7 +208,7 @@ def patch_ib():
     from ib_async import IB
 
     def _get_events(self):
-        if not hasattr(self, '_events'):
+        if not hasattr(self, "_events"):
             self._events = IBEventRegistry(self)
         return self._events
 

@@ -50,5 +50,5 @@ See Also:
     ib_async: https://github.com/erdewit/ib_async
 """
 
-__author__ = 'shawndeng'
-__email__ = 'shawndeng1109@qq.com'
+__author__ = "shawndeng"
+__email__ = "shawndeng1109@qq.com"
